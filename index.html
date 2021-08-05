@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="icon" href="images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="images/favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" href="images/favicon/android-chrome-512x512.png" sizes="512x512">
+<!--  firefox safari 에서는 마지막에 제공되는 파비콘을 사용-->
+<!-- 맥용 크롬에서는 ico포멧의 파비콘이 없으면 32x32파비콘을 사용한다-->
+<!-- 윈도우즈용 크롬에서는 16x16이 먼저 선언되면 16x16 png 파일을 그렇지 않으면
+     ico 파일을 사용한다. -->
+<!-- 참고
+    32 : chrome 신 버전
+    57 : 포준 ios 홈스크린(iPad Touch 3G 1세대)
+    72 : iPad 홈스크린 아이콘
+    96 : 구글TV 아이콘
+    120 : iPhone레티나 터치 아이콘
+    128 : 크롬웹스토어
+    144 : 고정된 IE10 매트로 타일
+    152 : iPad레티나 터치 아이콘
+    195 : Opera 스피드 다이얼 아이콘
+    228 : Opera Coast 아이콘
+    해상도 차이에 따라 : 앱의 해상도 차이에 따라 아이콘을 선택
+-->     
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/plugin/jquery-3.6.0.min.js"></script>   
+<script src="js/plugin/popper.min.js"></script>
+<script src="js/plugin/slick.min.js"></script>
+<!-- <script src="js/plugin/WOW.js"></script> -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f4fecf448ab926c99f3911320b6f0ada"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
+ <header>
+    <nav class="navbar navbar-dropdown navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+        <div class="container">
+            <!-- 로고 -->
+            <div class="navbar-brand">
+                 <a class="navbar-logo" href="#"><img src="images/logo.png" alt="웨딩의추억"></a> 
+            </div> 
+
+            <!-- 반응형 버튼 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#weMenu">
+            <i class="fas fa-bars"></i>
+            </button>
+            <!-- /반응형 버튼 -->
+
+            <div class="collapse navbar-collapse" id="weMenu"><!-- 반응형 버튼과 함께사용-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#couple">커플화보</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">갤러리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reserv">예약하기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#wdmap">오시는길</a>
+                </li>
+            </ul>
+        </div><!-- //collapse -->
+        </div>
+    </nav>
+    <section class="slider">
+        <video id="vod" autoplay muted loop>
+            <source src="vod/index.mp4" type="video/mp4">
+        </video>
+        <div class="main-text">
+             <img src="images/slider_txt.png" class="img-fluid" alt="wedding wd">
+             <p>*** WE ARE GETTING MARRIED ***</p>
+        </div>
+    </section>
+</header>
+
+    <section class="h-couple" id="couple">
+       <div class="container">
+            <h1 class="animate__fadeInDown">THE L&A HAPPY COUPLES </h1>
+            <p class="animate__fadeInDown text-center">저희 회사에서 진행한 커플 화보입니다.<br>
+                실제로 예식을 진행하는 것과 동일한 환경에서 촬영을 진행했습니다!</p>  
+            <div class="heartbox">
+                <!-- <svg id="heart" xmlns="http://www.w3.org/2000/svg" width="136" height="15.891" viewBox="0 0 136 15.891">
+                    <g transform="translate(-890.5 -1286.333)">
+                      <g>
+                        <g transform="translate(-38)">
+                          <path d="M10,15.875l-.022.017v-.034C9.049,15.157-5.893,3.731,2.6.248,8.658-.7,9.806,1.307,10,2.38,10.194,1.307,11.342-.7,17.4.248c8.5,3.483-6.445,14.909-7.374,15.61v.034Z" transform="translate(993 1286.333)" fill="#d2d2d2"/>
+                          <path d="M10,15.875l-.022.017v-.034C9.049,15.157-5.893,3.731,2.6.248,8.658-.7,9.806,1.307,10,2.38,10.194,1.307,11.342-.7,17.4.248c8.5,3.483-6.445,14.909-7.374,15.61v.034Z" transform="translate(981 1286.333)" fill="#f0394d"/>
+                        </g>
+                        <line x2="45" transform="translate(890.5 1294.5)" fill="none" stroke="#707070" stroke-width="1"/>
+                        <line x2="45" transform="translate(981.5 1294.278)" fill="none" stroke="#707070" stroke-width="1"/>
+                      </g>
+                    </g>
+                </svg> -->
+                <img src="images/heart-line.png" alt="heart and line">
+            </div>   
+            <div class="row mt-5">
+                 <div class="col-6">
+                     <img src="images/b-couple-m.jpg" class="img-fluid bd11" alt="커플남자" />
+                 </div>
+                 <div class="col-6">
+                    <img src="images/b-couple-f.jpg" class="img-fluid bd11" alt="커플여자" />
+                 </div>
+            </div>
+    </section>
+    <section class="wd-gallery" id="gallery">
+        <div class="container">
+            <h1 class="animate__fadeInDown">THE L&A GALLERY</h1>
+            <p class="animate__fadeInDown text-center">현재까지 LOVE AFFAIR에서 예식을 진행했던 예식장, 기타 섭외장소들의 사진입니다.<br>
+                저희와 예식을 진행할 지 여부를 고민하시는데 참고 바랍니다.</p>  
+                <div class="heartbox">
+                    <img src="images/heart-line.png" alt="heart and line">
+                </div> 
+            
+            <div class="row gallery mt-5">
+                 <div class="col-lg-3 col-md-6 col-12 pb-3">
+                     <img src="images/g01.png" alt="g01" class="img-fluid">
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-12 pb-3">
+                    <img src="images/g02.png" alt="g02" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-3">
+                    <img src="images/g03.png" alt="g03" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-3">
+                    <img src="images/g04.jpg" alt="g04" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pt-3">
+                    <img src="images/g05.jpg" alt="g05" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pt-3">
+                    <img src="images/g06.jpg" alt="g06" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pt-3">
+                    <img src="images/g07.png" alt="g07" class="img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pt-3">
+                    <img src="images/g08.png" alt="g08" class="img-fluid">
+                </div>
+            </div>
+    </section>
+
+    <section class="wd-reserv" id="reserv">
+        <div class="container">
+            <h1>THE L&A 예약하기</h1>
+            <p class="text-center">저희 웨딩 서비스 상담을 예약하고 싶으신 분들은<br>
+                아래 폼을 작성하여 전송 버튼을 클릭해주시기 바랍니다.
+            </p>  
+                <div class="heartbox">
+                    <img src="images/heart-line.png" alt="heart and line">
+                </div>
+                <div class="gr-box mt-5">
+                    <form  class="resform" method="post">
+                       <ul>
+                           <li class="form-group">
+                               <label>이름</label>
+                               <input type="text" class="form-control" name="uname" placeholder="이름">
+                           </li>  
+                           <li class="form-group">
+                               <label>이메일</label>
+                               <input type="text" class="form-control" name="email" placeholder="이메일">
+                           </li>
+                           <li class="form-group row">
+                               <label>휴대폰</label>
+                               <div class="col-4">
+                                   <input type="text" class="form-control" name="hphone01" placeholder="휴대폰">
+                               </div>
+                               <div class="col-4">
+                                   <input type="text" class="form-control" name="hphone02">
+                               </div>
+                               <div class="col-4">
+                                  <input type="text" class="form-control" name="hphone03">
+                               </div>
+                            </li>
+
+                           <li class="form-group form-post">
+                               <label>우편번호</label>
+                               <input type="text" class="form-control postcode" name="zip" id="zip" readonly placeholder="우편번호">
+                               <button type="button" class="btn btn-danger btn-post" onclick="postCode()">우편번호</button>
+                           </li>
+                           <li class="form-group">
+                               <label>주소</label>
+                               <input type="text" class="form-control" name="address" id="address" placeholder="주소">
+                           </li>
+                           <li class="form-group">
+                               <label>상세주소</label>
+                               <input type="text" class="form-control" name="daddress" id="daddress" placeholder="상세주소">
+                           </li>
+
+
+                           <li class="form-group">
+                               <label>하시고 싶은 말씀</label>
+                               <textarea class="form-control" rows="5" name="uname" placeholder="하시고 싶은 말씀"></textarea>
+                           </li>
+                           <li class="form-group text-center">
+                              <button type="submit" class="btn btn-danger" name="btn">전 송</button>
+                           </li>           
+                       </ul> 
+                    </form>
+                </div>    
+        </div>
+    </section>   
+    <section class="wd-map" id="wdmap">
+        <div class="container">
+            <h1>THE L&A 오시는 길</h1>
+            <p class="text-center">지하철: 김포골드라인 걸포북변역 도보 약 8분<br>
+                버스: 걸포북변역 정류장에서 도보 약 5분, 북변사거리 정류장에서 도보 1분</p>  
+                <div class="heartbox">
+                    <img src="images/heart-line.png" alt="heart and line">
+                </div>    
+                <div class="mt-5 mb-5" id="map"></div>
+                <!-- <p>
+                    <input type="checkbox" id="chkUseDistrict" onclick="setOverlayMapTypeId()" /> 지적편집도 정보 보기
+                    <input type="checkbox" id="chkTerrain" onclick="setOverlayMapTypeId()" /> 지형정보 보기 
+                    <input type="checkbox" id="chkTraffic" onclick="setOverlayMapTypeId()" /> 교통정보 보기       
+                    <input type="checkbox" id="chkBicycle" onclick="setOverlayMapTypeId()" /> 자전거도로 정보 보기
+                </p> -->
+                <p class="map-add text-center">
+                    <strong>경기 김포시 북변중로 137 (지번) 북변동 146-3</strong>
+                    <br><strong>TEL) 031-984-3123</strong>
+                </p>
+             
+         
+        </div>
+    </section>   
+    <footer>
+        <div class="container">
+             <div class="footer-logo">
+                <div class="blogo-box">
+                    <img src="images/logo.png" alt="웨딩의추억">
+                    LOVE AFFAIR
+                </div>    
+                <ul class="d-flex">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">회원약관</a></li>
+                </ul>
+             </div>
+             <div class="footer-add pt-3">
+                경기 김포시 북변중로 137 (지번) 북변동 146-3<br>
+                TEL: 031 998 7599     E-MAIL :  asdf@asdf.com
+             </div>
+             <div class="footer-copy text-center pt-3 pb-5">
+                Copyright  2021  &copy;<strong>LOVE AFFAIR</strong>  All right reserved.  
+             </div>
+        </div>
+    </footer>
+
+</body>
+</html>

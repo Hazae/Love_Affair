@@ -1,0 +1,235 @@
+@import url('notosans.css');
+@import url('../bootstrap/css/bootstrap.min.css');
+@import url('reset.css');
+@import url('all.min.css');
+@import url('animate.min.css');
+@import url('weather-icons.css');
+@import url('weather-icons-wind.css');
+@import url('slick.css');
+@import url('slick-theme.css');
+body{
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size:16px;
+    margin:0;
+    padding:0;
+}
+section h1{
+    text-align:center;
+    font-size:35px;
+    font-weight:700;
+    color:#000;
+}
+section p{
+    font-size:16px;
+    color:#000;
+    font-weight:400;
+    line-height:1.45;
+    margin-top:30px;
+}
+.navbar-logo img{
+    max-width:75px;
+}
+.nav-link{
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    transition:transform 300ms ease;
+}
+.nav-link:hover{
+    border-bottom:3px solid #F0394D;
+    color:#fff;
+}
+.slider{
+    height:960px;
+    overflow:hidden;
+}
+.slider{
+    position:relative;
+    top:0;
+    left:0;
+}
+
+.main-text{
+    width:200px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:150px;
+    z-index:2;
+    text-align:center;
+}
+.main-text p{
+    display:none;
+}
+.heartbox{
+    margin-top:40px;
+    text-align:center;
+}
+.bd11{
+    border:11px solid #878787;
+}
+.col-6{
+    position:relative;
+}
+
+.gallery img{
+    width:100%;
+}
+.navbar-background{
+    background-color:transparent;
+}
+.form-group label{
+    text-indent:-1000px;
+}
+.wd-reserv .resform{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+.form-post{
+    display: flex;
+    justify-content: flex-start;
+}
+.postcode{
+    width: 200px;
+}
+.btn-post{
+    margin-left: 50px;
+}
+@media (max-width: 1199px) {
+    #vod{
+        position:absolute;
+        top:0;
+        left:0;
+        height:90%;
+    }
+    .map-add{
+       text-align:center;
+    }
+    #map{
+        width:100%;
+        min-height:300px;
+        border:1px solid #ccc;
+    }
+}
+@media (min-width: 1200px) {
+   .navbar-brand{
+       margin-right:70px;
+   }
+   .nav-link{
+       width:150px;
+   }
+   .nav-item:not(:last-child)>.nav-link::after{
+       content: "\2665";
+       display:inline-block;
+       margin-left:30px;
+       font-size:12px;
+       color:#FC9D9A; 
+   }
+   #vod{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+   }
+    .main-text{
+        width:550px;
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        top:200px;
+        z-index:2;
+        text-align:center;
+    }
+    .main-text p{
+        text-align:center;
+        font-size:25px;
+        color:#fff;
+        line-height:42px;
+        border-top:3px double #fff;
+        border-bottom:3px double #fff;
+    }
+    section:not(.slider){
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+    .navbar-background{
+        background-color:rgba(0,0,0,0.7);
+    }
+
+    .wd-reserv{
+        background:url(../images/res_back.png) no-repeat 100% 95%;
+    }
+    .gr-box{
+        min-height:500px;
+        background:rgba(255, 255, 255, 0.3);
+        padding:30px 50px;
+        border: 1px solid #fc9d9a9d;
+    }   
+
+    .resform{
+        width:60%;
+    }
+    #map{
+        width:1110px;
+        height: 600px;
+        max-width:1110px;
+        min-height:600px;
+        box-shadow:0 0 49px 0 rgba(0,0,0,0.3);
+        border:1px solid #ccc;
+    }
+    .map-add{
+        width:550px;
+        margin:0 auto;
+    }
+}
+
+footer{
+    background-color:#cecece;
+}
+.footer-logo{
+    height:90px;
+    padding-top:20px;
+    width:100%;
+    padding-bottom:20px;
+}
+.footer-logo img{
+    width:75px;
+    float:left;
+    padding-right:15px;
+}
+.footer-logo .blogo-box{
+    font-size:20px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    width:200px;
+    float:left;
+}
+.footer-logo ul{
+    float:right;
+    margin-top:15px;
+}
+.footer-logo ul a{
+    color:#000;
+    padding-right:20px;
+    padding-left:20px;
+}
+.footer-logo ul li:last-child{
+    border-left:1px solid #000;
+}
+.footer-copy{
+    font-weight:200;
+    width:100%;
+}
+.footer-copy strong{
+    font-weight:700;
+}
+.animate__animated.animate__delay-500ms {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+}
+
