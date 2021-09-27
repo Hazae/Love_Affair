@@ -1,25 +1,6 @@
 $(function(){
-//    $(window).scroll(function(){
-//        var thisTop = $(document).scrollTop();
-//        console.log(thisTop);
-//        if(thisTop < 180){
-//           $('nav.navbar').css('background', 'transparent');
-//        }else if((thisTop > 180)&&(thisTop < 970)){
-//            $('nav.navbar').css('background', 'rgba(255,255,255,0.7)');
-//        }else{
-//            $('nav.navbar').css('background', 'rgba(0,0,0,0.7)');
-//        }
-//        if(thisTop < 900){
-//           $('nav.navbar').removeClass('navbar-background');
-//        }else{
-//           $('nav.navbar').addClass('navbar-background'); 
-//        }
-//    });
-
     $(window).scroll(function(){
         var thisTop = $(document).scrollTop();
-        // console.log(thisTop);
-        //thisTop값으로 nav와 그 외 글씨가 겹칠 때 잘 안 보이는 걸 개선하기 위한 조치
         if(thisTop<180){
             $('nav.navbar').css('background', 'transparent');
             $('a.nav-link').css('color', 'rgb(0,0,0)');
@@ -48,9 +29,6 @@ $(function(){
         }
    });
 });
-
-// new Window().init();
-
 
 function postCode() {
    new daum.Postcode({
@@ -102,43 +80,3 @@ var mapOption = {
     level: 3
 };
 var map = new kakao.maps.Map(mapContainer, mapOption);
-// var mapTypes = {
-//     terrain : kakao.maps.MapTypeId.TERRAIN,    
-//     traffic :  kakao.maps.MapTypeId.TRAFFIC,
-//     bicycle : kakao.maps.MapTypeId.BICYCLE,
-//     useDistrict : kakao.maps.MapTypeId.USE_DISTRICT
-// };
-
-// // 체크 박스를 선택하면 호출되는 함수입니다
-// function setOverlayMapTypeId() {
-//     var chkTerrain = document.getElementById('chkTerrain'),  
-//         chkTraffic = document.getElementById('chkTraffic'),
-//         chkBicycle = document.getElementById('chkBicycle'),
-//         chkUseDistrict = document.getElementById('chkUseDistrict');
-    
-//     // 지도 타입을 제거합니다
-//     for (var type in mapTypes) {
-//         map.removeOverlayMapTypeId(mapTypes[type]);    
-//     }
-
-//     // 지적편집도정보 체크박스가 체크되어있으면 지도에 지적편집도정보 지도타입을 추가합니다
-//     if (chkUseDistrict.checked) {
-//         map.addOverlayMapTypeId(mapTypes.useDistrict);    
-//     }
-    
-//     // 지형정보 체크박스가 체크되어있으면 지도에 지형정보 지도타입을 추가합니다
-//     if (chkTerrain.checked) {
-//         map.addOverlayMapTypeId(mapTypes.terrain);    
-//     }
-    
-//     // 교통정보 체크박스가 체크되어있으면 지도에 교통정보 지도타입을 추가합니다
-//     if (chkTraffic.checked) {
-//         map.addOverlayMapTypeId(mapTypes.traffic);    
-//     }
-    
-//     // 자전거도로정보 체크박스가 체크되어있으면 지도에 자전거도로정보 지도타입을 추가합니다
-//     if (chkBicycle.checked) {
-//         map.addOverlayMapTypeId(mapTypes.bicycle);    
-//     }
-    
-// }  
